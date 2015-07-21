@@ -1,7 +1,7 @@
 options( digits = 16 )
 library( jsonlite )
 
-lambda = 1
+lambda = 2
 x = c( -5, -2.5, 0, 2.5, 5 )
 y = pexp( x, lambda )
 
