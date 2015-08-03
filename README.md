@@ -1,10 +1,10 @@
 Cumulative Distribution Function
 ===
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][codecov-image]][codecov-url] [![Dependencies][dependencies-image]][dependencies-url]
 
 > [Exponential](https://en.wikipedia.org/wiki/Exponential_distribution) distribution [cumulative distribution function](https://en.wikipedia.org/wiki/Cumulative_distribution_function).
 
-The [cumulative distribution function](https://en.wikipedia.org/wiki/Cumulative_distribution_function) for a [Exponential](https://en.wikipedia.org/wiki/Exponential_distribution) random variable is
+The [cumulative distribution function](https://en.wikipedia.org/wiki/Cumulative_distribution_function) for an [Exponential](https://en.wikipedia.org/wiki/Exponential_distribution) random variable is
 
 <div class="equation" align="center" data-raw-text="F(x;\lambda) = \begin{cases} 1-e^{-\lambda x} &amp; x \ge 0 \\ 0 & x < 0 \end{cases} " data-equation="eq:cdf">
 	<img src="https://cdn.rawgit.com/distributions-io/exponential-cdf/e10bd07b2bb626ca4a4212b3a5857bf107c47600/docs/img/eqn.svg" alt="Cumulative distribution function for a Exponential distribution.">
@@ -78,7 +78,7 @@ The function accepts the following `options`:
 *	__path__: [deepget](https://github.com/kgryte/utils-deep-get)/[deepset](https://github.com/kgryte/utils-deep-set) key path.
 *	__sep__: [deepget](https://github.com/kgryte/utils-deep-get)/[deepset](https://github.com/kgryte/utils-deep-set) key path separator. Default: `'.'`.
 
-A [Exponential](https://en.wikipedia.org/wiki/Exponential_distribution) distribution is a function of 1 parameter(s): `lambda`(rate parameter). By default, `lambda` is equal to `1`. To adjust either parameter, set the corresponding option(s).
+A [Exponential](https://en.wikipedia.org/wiki/Exponential_distribution) distribution is a function of one parameter: `lambda`(rate parameter). By default, `lambda` is equal to `1`. To adjust the parameter, set the corresponding option.
 
 ``` javascript
 var x = [ -1, 0, 1, 2, 3 ];
@@ -362,8 +362,8 @@ Copyright &copy; 2015. The [Compute.io](https://github.com/compute-io) Authors.
 [travis-image]: http://img.shields.io/travis/distributions-io/exponential-cdf/master.svg
 [travis-url]: https://travis-ci.org/distributions-io/exponential-cdf
 
-[coveralls-image]: https://img.shields.io/coveralls/distributions-io/exponential-cdf/master.svg
-[coveralls-url]: https://coveralls.io/r/distributions-io/exponential-cdf?branch=master
+[codecov-image]: https://img.shields.io/codecov/c/github/distributions-io/exponential-cdf/master.svg
+[codecov-url]: https://codecov.io/github/distributions-io/exponential-cdf?branch=master
 
 [dependencies-image]: http://img.shields.io/david/distributions-io/exponential-cdf.svg
 [dependencies-url]: https://david-dm.org/distributions-io/exponential-cdf

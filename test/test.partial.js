@@ -37,7 +37,7 @@ describe( 'partial cdf', function tests() {
 		expect( partial ).to.be.a( 'function' );
 	});
 
-	it( 'should partially apply the Exponential cdf for given parameter values', function test() {
+	it( 'should partially apply the cumulative distribution function for given parameter values', function test() {
 		var cdf;
 		cdf = partial( lambda );
 		expect( cdf ).to.be.a( 'function' );

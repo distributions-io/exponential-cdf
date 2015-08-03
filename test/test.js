@@ -127,7 +127,7 @@ describe( 'distributions-exponential-cdf', function tests() {
 		}
 	});
 
-	it( 'should compute the Exponential cdf when provided a number', function test() {
+	it( 'should compute the cumulative distribution function when provided a number', function test() {
 		var	validationData = require( './fixtures/number.json' ),
 			data = validationData.data,
 			expected = validationData.expected.map( function( d ) {
@@ -146,7 +146,7 @@ describe( 'distributions-exponential-cdf', function tests() {
 			}
 	});
 
-	it( 'should evaluate the Exponential cdf when provided a plain array', function test() {
+	it( 'should evaluate the cumulative distribution function when provided a plain array', function test() {
 
 		var validationData = require( './fixtures/array.json' ),
 			data,
@@ -184,7 +184,7 @@ describe( 'distributions-exponential-cdf', function tests() {
 		}
 	});
 
-	it( 'should evaluate the Exponential cdf when provided a typed array', function test() {
+	it( 'should evaluate the cumulative distribution function when provided a typed array', function test() {
 		var validationData = require( './fixtures/typedarray.json' ),
 			data,
 			actual,
@@ -225,7 +225,7 @@ describe( 'distributions-exponential-cdf', function tests() {
 		}
 	});
 
-	it( 'should evaluate the Exponential cdf element-wise and return an array of a specific type', function test() {
+	it( 'should evaluate the cumulative distribution function element-wise and return an array of a specific type', function test() {
 
 		var validationData = require( './fixtures/array.json' ),
 			// make copy of data array to prevent mutation of validationData
@@ -253,7 +253,7 @@ describe( 'distributions-exponential-cdf', function tests() {
 		}
 	});
 
-	it( 'should evaluate the Exponential cdf element-wise using an accessor', function test() {
+	it( 'should evaluate the cumulative distribution function element-wise using an accessor', function test() {
 		var validationData = require( './fixtures/accessor.json' ),
 			data,
 			actual,
@@ -299,7 +299,7 @@ describe( 'distributions-exponential-cdf', function tests() {
 		}
 	});
 
-	it( 'should evaluate the Exponential cdf element-wise and deep set', function test() {
+	it( 'should evaluate the cumulative distribution function element-wise and deep set', function test() {
 		var validationData = require( './fixtures/deepset.json' ),
 				data,
 				actual,
@@ -349,7 +349,7 @@ describe( 'distributions-exponential-cdf', function tests() {
 		}
 	});
 
-	it( 'should evaluate the Exponential cdf element-wise when provided a matrix', function test() {
+	it( 'should evaluate the cumulative distribution function element-wise when provided a matrix', function test() {
 		var validationData = require( './fixtures/matrix.json' ),
 			mat,
 			out,
@@ -387,7 +387,7 @@ describe( 'distributions-exponential-cdf', function tests() {
 		}
 	});
 
-	it( 'should evaluate the Exponential cdf element-wise and return a matrix of a specific type', function test() {
+	it( 'should evaluate the cumulative distribution function element-wise and return a matrix of a specific type', function test() {
 		var validationData = require( './fixtures/matrix.json' ),
 			mat,
 			out,

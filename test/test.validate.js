@@ -41,7 +41,7 @@ describe( 'validate', function tests() {
 		}
 	});
 
-	it( 'should return an error if provided a `lambda` parameter which is not a positive number', function test() {
+	it( 'should return an error if provided a rate parameter `lambda` which is not a positive number', function test() {
 		var values, err;
 		 values = [
 			-2,

@@ -30,7 +30,7 @@ describe( 'accessor cdf', function tests() {
 		expect( cdf ).to.be.a( 'function' );
 	});
 
-	it( 'should evaluate the Exponential cdf using an accessor', function test() {
+	it( 'should evaluate the cumulative distribution function using an accessor', function test() {
 		var data, actual, expected, i;
 
 		data = validationData.data.map( function( e ) {

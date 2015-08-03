@@ -53,7 +53,7 @@ describe( 'matrix cdf', function tests() {
 		}
 	});
 
-	it( 'should evaluate the Exponential cdf for each matrix element', function test() {
+	it( 'should evaluate the cumulative distribution function for each matrix element', function test() {
 		var actual, i;
 
 		actual = matrix( [5,5], 'float64' );

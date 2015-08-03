@@ -30,7 +30,7 @@ describe( 'array cdf', function tests() {
 		expect( cdf ).to.be.a( 'function' );
 	});
 
-	it( 'should evaluate the Exponential cdf', function test() {
+	it( 'should evaluate the cumulative distribution function', function test() {
 		var data, actual, expected, i;
 
 		data = validationData.data;

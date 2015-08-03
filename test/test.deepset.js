@@ -30,7 +30,7 @@ describe( 'deepset cdf', function tests() {
 		expect( cdf ).to.be.a( 'function' );
 	});
 
-	it( 'should compute the Exponential cdf and deep set', function test() {
+	it( 'should compute the cumulative distribution function and deep set', function test() {
 		var data, expected, i;
 
 		data = validationData.data.map( function( e ) {
