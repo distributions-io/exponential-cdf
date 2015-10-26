@@ -20,7 +20,7 @@
   "main": "./lib",
   "repository": {
     "type": "git",
-    "url": "git://github.com/compute-io/exponential-cdf.git"
+    "url": "git://github.com/distributions-io/exponential-cdf.git"
   },
   "keywords": [
     "distributions.io",
@@ -36,7 +36,7 @@
     "life-time"
   ],
   "bugs": {
-    "url": "https://github.com/compute-io/exponential-cdf/issues"
+    "url": "https://github.com/distributions-io/exponential-cdf/issues"
   },
   "dependencies": {
     "compute-array-constructors": "^1.0.0",
