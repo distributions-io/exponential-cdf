@@ -4,14 +4,14 @@ Cumulative Distribution Function
 
 > [Exponential](https://en.wikipedia.org/wiki/Exponential_distribution) distribution [cumulative distribution function](https://en.wikipedia.org/wiki/Cumulative_distribution_function).
 
-The [cumulative distribution function](https://en.wikipedia.org/wiki/Cumulative_distribution_function) for an [Exponential](https://en.wikipedia.org/wiki/Exponential_distribution) random variable is
+The [cumulative distribution function](https://en.wikipedia.org/wiki/Cumulative_distribution_function) for an [exponential](https://en.wikipedia.org/wiki/Exponential_distribution) random variable is
 
 <div class="equation" align="center" data-raw-text="F(x;\lambda) = \begin{cases} 1-e^{-\lambda x} &amp; x \ge 0 \\ 0 & x < 0 \end{cases} " data-equation="eq:cdf">
-	<img src="https://cdn.rawgit.com/distributions-io/exponential-cdf/e10bd07b2bb626ca4a4212b3a5857bf107c47600/docs/img/eqn.svg" alt="Cumulative distribution function for a Exponential distribution.">
+	<img src="https://cdn.rawgit.com/distributions-io/exponential-cdf/e10bd07b2bb626ca4a4212b3a5857bf107c47600/docs/img/eqn.svg" alt="Cumulative distribution function for an exponential distribution.">
 	<br>
 </div>
 
-where `lambda` is the rate parameter.
+where `lambda > 0` is the rate parameter.
 
 ## Installation
 
@@ -30,7 +30,7 @@ var cdf = require( 'distributions-exponential-cdf' );
 
 #### cdf( x[, options] )
 
-Evaluates the [cumulative distribution function](https://en.wikipedia.org/wiki/Cumulative_distribution_function) for the [Exponential](https://en.wikipedia.org/wiki/Exponential_distribution) distribution. `x` may be either a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), an [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), a [`typed array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays), or a [`matrix`](https://github.com/dstructs/matrix).
+Evaluates the [cumulative distribution function](https://en.wikipedia.org/wiki/Cumulative_distribution_function) for the [exponential](https://en.wikipedia.org/wiki/Exponential_distribution) distribution. `x` may be either a [`number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), an [`array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), a [`typed array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays), or a [`matrix`](https://github.com/dstructs/matrix).
 
 ``` javascript
 var matrix = require( 'dstructs-matrix' ),
@@ -48,7 +48,7 @@ out = cdf( x );
 
 x = new Float32Array( x );
 out = cdf( x );
-// returns Float64Array( [...] )
+// returns Float64Array( [0,0,~0.632,~0.865,~0.95] )
 
 x = new Float32Array( 6 );
 for ( i = 0; i < 6; i++ ) {
@@ -78,7 +78,7 @@ The function accepts the following `options`:
 *	__path__: [deepget](https://github.com/kgryte/utils-deep-get)/[deepset](https://github.com/kgryte/utils-deep-set) key path.
 *	__sep__: [deepget](https://github.com/kgryte/utils-deep-get)/[deepset](https://github.com/kgryte/utils-deep-set) key path separator. Default: `'.'`.
 
-A [Exponential](https://en.wikipedia.org/wiki/Exponential_distribution) distribution is a function of one parameter: `lambda`(rate parameter). By default, `lambda` is equal to `1`. To adjust the parameter, set the corresponding option.
+An [exponential](https://en.wikipedia.org/wiki/Exponential_distribution) distribution is a function of one parameter: `lambda`(rate parameter). By default, `lambda` is equal to `1`. To adjust the parameter, set the corresponding option.
 
 ``` javascript
 var x = [ -1, 0, 1, 2, 3 ];
